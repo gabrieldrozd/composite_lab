@@ -16,6 +16,8 @@ kierownik2.Add(new Pracownik("pracuś 6"));
 szef.Add(kierownik);
 szef.Add(kierownik2);
 
+szef.Add(new Pracownik("Podwładny"));
+
 
 Console.WriteLine($"{szef.GetName()} odpowiada za: {szef.Count()} pracowników");
 szef.Display(1);

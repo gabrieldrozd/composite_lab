@@ -25,14 +25,7 @@ public class Kierownik : PracownikAbs
 
     public override int Count()
     {
-        var count = 0;
-
-        foreach (var pracownik in Pracownicy)
-        {
-            count += pracownik.Count();
-        }
-
-        return count;
+        return Pracownicy.Sum(pracownik => pracownik.Count());
     }
     
     public override void Display(int depth)
